@@ -1,0 +1,24 @@
+.services {
+
+    > .service {
+        display: inline-block;
+        float: left;
+        width: 33%;
+
+        > .title {
+            color: var(--juoda);
+        }
+        > .icon {
+            background-color: var(--violetine);
+            color: #fff;
+            width: var(--ikonos-dydis);
+            line-height: var(--ikonos-dydis);
+            border-radius: calc(var(--ikonos-dydis) / 2);
+            text-align: center;
+            font-size: 40px;
+        }
+        > .description {
+            color: #555;
+        }
+    }
+}

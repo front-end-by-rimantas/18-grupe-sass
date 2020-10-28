@@ -1,0 +1,66 @@
+@mixin marija($width, $float) {
+    display: inline-block;
+    width: $width;
+    float: $float;
+}
+
+@mixin circle($size) {
+    width: $size;
+    line-height: $size;
+    border-radius: 50%;
+}
+
+header {
+    @include marija(100%, left);
+
+    > a {
+        @include marija(auto, left);
+
+        > img {
+            width: 60px;
+            height: 60px;
+            background-color: aqua;
+            transform: rotate(30deg);
+        }
+    }
+
+    > nav {
+        @include marija(auto, right);
+
+        > a {
+            @include marija(auto, left);
+            padding: 10px;
+            margin-left: 20px;
+
+            &:hover {
+                background-color: yellow;
+            }
+
+            + a {
+                text-transform: uppercase;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.services {
+
+    > .service {
+        @include marija(33%, left);
+
+        > .title {
+            color: var(--juoda);
+        }
+        > .icon {
+            background-color: var(--violetine);
+            color: #fff;
+            @include circle(var(--ikonos-dydis));
+            text-align: center;
+            font-size: 40px;
+        }
+        > .description {
+            color: #555;
+        }
+    }
+}

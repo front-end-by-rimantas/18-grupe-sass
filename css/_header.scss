@@ -1,0 +1,36 @@
+header {
+    display: inline-block;
+    width: 100%;
+
+    > a {
+        display: inline-block;
+        float: left;
+
+        > img {
+            width: 60px;
+            height: 60px;
+            background-color: aqua;
+        }
+    }
+
+    > nav {
+        display: inline-block;
+        float: right;
+
+        > a {
+            display: inline-block;
+            float: left;
+            padding: 10px;
+            margin-left: 20px;
+
+            &:hover {
+                background-color: yellow;
+            }
+
+            + a {
+                text-transform: uppercase;
+                margin-left: 0;
+            }
+        }
+    }
+}

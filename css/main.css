@@ -1,0 +1,66 @@
+header {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+
+header > a {
+  display: inline-block;
+  width: auto;
+  float: left;
+}
+
+header > a > img {
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+header > nav {
+  display: inline-block;
+  width: auto;
+  float: right;
+}
+
+header > nav > a {
+  display: inline-block;
+  width: auto;
+  float: left;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+header > nav > a:hover {
+  background-color: yellow;
+}
+
+header > nav > a + a {
+  text-transform: uppercase;
+  margin-left: 0;
+}
+
+.services > .service {
+  display: inline-block;
+  width: 33%;
+  float: left;
+}
+
+.services > .service > .title {
+  color: var(--juoda);
+}
+
+.services > .service > .icon {
+  background-color: var(--violetine);
+  color: #fff;
+  width: var(--ikonos-dydis);
+  line-height: var(--ikonos-dydis);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.services > .service > .description {
+  color: #555;
+}
